@@ -39,13 +39,14 @@
 <p>We process your data to provide the service you request (performance of a contract, Article 6(1)(b) GDPR) and, for importing LinkedIn data and processing documents with an AI model, on the basis of your consent (Article 6(1)(a) GDPR), which you give in the app and, for LinkedIn, in LinkedIn's authorisation screen. You can withdraw consent at any time by deleting your data in the app and, for LinkedIn, by removing the app's access in your LinkedIn settings.</p>
 
 <h2>5. Where your data is stored</h2>
-<p>In the current test version your profile, transcript and settings are stored <strong>only on your phone</strong>. Your AI service key is kept in Android's encrypted storage. When the LinkedIn connection is enabled, a small server operated by us in the European Union exchanges the LinkedIn authorisation and passes your LinkedIn data to your phone; it does not keep a copy of that data.</p>
+<p>In the current test version your profile, transcript and settings are stored <strong>only on your phone</strong>. Your AI service key is kept in Android's encrypted storage. For the LinkedIn connection, a small server operated by us on Google Cloud in Belgium (region europe-west1) exchanges LinkedIn's authorisation for an access token and hands that token to your phone once; the token waits on the server for at most 10 minutes and is then deleted. Your phone then reads your profile directly from LinkedIn. No LinkedIn profile data passes through or is stored on our server. If you use Android's backup, the app's data file (not your AI key or LinkedIn token) is included in your own Google account backup; you can also save a backup file yourself.</p>
 
 <h2>6. Service providers (processors)</h2>
 <ul>
 <li><strong>AI model</strong>: to read documents and run the interview, the text and documents you provide are sent to the AI model selected in the app. By default this is <strong>Google Gemini</strong> (Google Cloud, paid service, under Google's data processing terms; Google does not use this content to improve its products). Alternatively <strong>Anthropic Claude</strong>, if you choose it.</li>
 <li><strong>Speech recognition and text-to-speech</strong>: provided by the speech services of your phone (on most Android phones: Google).</li>
 <li><strong>LinkedIn</strong>: source of your profile data, only with your consent.</li>
+<li><strong>Google Cloud</strong> (region europe-west1, Belgium): hosts our small server for the LinkedIn authorisation.</li>
 </ul>
 <p>Some providers may process data outside the European Economic Area. Where this happens, transfers rely on the safeguards offered by those providers, such as the EU Standard Contractual Clauses or an adequacy decision.</p>
 
